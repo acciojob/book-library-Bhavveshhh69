@@ -1,71 +1,66 @@
-/*  your css code here. If applicable */
-/* Body Styling */
+/* General Page Styling */
 body {
 	background-color: #f8f8f8;
 	font-family: Arial, sans-serif;
-	text-align: center;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 h1 {
-	color: #333333;
-	padding: 20px 0;
+	background-color: #fff;
+	padding: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 0 0 20px 0;
 }
 
 /* Library Container */
 .book-library {
-	background-color: #ffffff;
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Book Styling */
+.book {
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.book img {
+	width: 180px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.book h2 {
+	font-size: 18px;
+	margin: 10px 0 5px;
+	color: #333;
+}
+
+.book .author {
+	color: #777;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.book .price {
+	background-color: #2ecc71;
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
 	width: 80%;
 	margin: 0 auto;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
-}
-
-/* Individual Book */
-.book {
-	width: 250px;
-	background-color: #fafafa;
-	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-	padding: 15px;
-	margin: 15px;
-	transition: transform 0.2s;
-}
-
-.book:hover {
-	transform: scale(1.05);
-}
-
-/* Book Image */
-.book img {
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-	border-radius: 5px;
-}
-
-/* Book Title */
-.book h2 {
-	color: #333333;
-	font-size: 20px;
-	margin: 10px 0 5px;
-}
-
-/* Author */
-.book .author {
-	color: #777777;
-	font-size: 16px;
-	margin-bottom: 5px;
-}
-
-/* Price */
-.book .price {
-	color: #2ecc71;
 	font-weight: bold;
-	font-size: 18px;
 }
